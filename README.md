@@ -1,4 +1,4 @@
-UniVault is a console-based record management and simulation system written in C++. The entire system is built on raw heap memory and pointer arithmetic with no STL containers, no classes, and no structs anywhere in the codebase.
+﻿UniVault is a console-based record management and simulation system written in C++. The entire system is built on raw heap memory and pointer arithmetic with no STL containers, no classes, and no structs anywhere in the codebase.
 
 The campus is modeled as a 3D grid allocated entirely on the heap. Every room is accessed through pointer arithmetic only. Grid dimensions are pulled from a config file on startup so nothing is hardcoded.
 
@@ -17,3 +17,18 @@ Stack: C++, manual heap memory, pointer arithmetic, file I/O, bitwise operations
 To build and run:
 g++ -o univault main.cpp
 ./univault
+
+<!-- structure:start -->
+## Project structure
+
+**Stack:** C++
+
+```
+.gitignore
+config.txt
+database.txt
+README.md
+UniVault.cpp
+```
+<!-- structure:end -->
+
